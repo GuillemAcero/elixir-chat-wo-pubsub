@@ -1,0 +1,9 @@
+<div class="mx-auto max-w-sm">
+  <.simple_form :let={f} for={to_form(%{user: @user})} action={~p"/login"}>
+    <.input field={f[:user]} type="text" label="User" required />
+
+    <:actions>
+      <.button phx-disable-with="Creating account..." class="w-full">Start Chating!!</.button>
+    </:actions>
+  </.simple_form>
+</div>
